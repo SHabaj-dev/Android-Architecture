@@ -2,8 +2,8 @@ package com.sbz.viewmodelexample
 
 import androidx.lifecycle.ViewModel
 
-class MainViewModel : ViewModel() {
-    var count: Int = 0
+class MainViewModel(initialValue: Int) : ViewModel() {
+    var count = initialValue
 
 
     fun increment() {
